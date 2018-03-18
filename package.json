@@ -1,9 +1,9 @@
 {
-  "name": "solarized-light-syntax",
+  "name": "solarized-light-bold-nature-syntax",
   "theme": "syntax",
-  "version": "1.1.4",
-  "description": "A light syntax theme using the solarized colors",
-  "repository": "https://github.com/atom/solarized-light-syntax",
+  "version": "0.0.1",
+  "description": "A light syntax theme using solarized colors that provides more visual contrast between keywords, class names, and variables.",
+  "repository": "https://github.com/JeremyBuchmann/solarized-light-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"

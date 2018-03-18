@@ -1,67 +1,133 @@
 .syntax--source.syntax--php {
-  .syntax--storage {
-    &.syntax--type {
-      &.syntax--class {
-        color: @yellow;
-      }
-      &.syntax--function {
-        color: @orange;
-      }
+
+    .syntax--storage {
+        color: @base01;
+        &.syntax--type {
+            color: @green;
+            &.syntax--class {
+                font-weight: bold;
+                color: @base01;
+            }
+            &.syntax--function {
+                font-weight: bold;
+                color: @violet;
+            }
+        }
+        &.syntax--modifier {
+            font-weight: bold;
+            color: @base01;
+            &.syntax--extends {
+                color: @base01;
+            }
+            &.syntax--reference {
+                font-weight: normal;
+            }
+        }
     }
-    &.syntax--modifier {
-      color: @yellow;
+
+    .syntax--entity {
+        &.syntax--name {
+            &.syntax--type.syntax--class {
+                color: @syntax-text-color;
+            }
+            &.syntax--function {
+                color: @syntax-text-color;
+            }
+        }
+        &.syntax--other {
+            color: @syntax-text-color;
+        }
     }
-  }
-  .syntax--entity {
-    &.syntax--name {
-      &.syntax--type.syntax--class {
+
+    .syntax--variable {
+        color: @cyan;
+        &.syntax--other {
+            &.syntax--global {
+                //text-decoration: underline;
+            }
+        }
+    }
+
+    .syntax--constant {
         color: @syntax-text-color;
-      }
-      &.syntax--function {
+        &.syntax--language {
+            font-weight: bolder;
+        }
+    }
+
+    .syntax--string {
+        color: @blue;
+    }
+
+    .syntax--comment {
+        color: @base1;
+        .syntax--support {
+            &.syntax--class {
+                color: @base1;
+            }
+        }
+        .syntax--keyword {
+            &.syntax--other {
+                &.syntax--type {
+                    color: @base1;
+                    font-weight: normal;
+                }
+                &.syntax--phpdoc {
+                    color: @base1;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .syntax--punctuation.syntax--definition {
         color: @syntax-text-color;
-      }
+        &.syntax--comment {
+            color: @base1;
+        }
+        &.syntax--array {
+            color: @syntax-text-color;
+        }
+        &.syntax--string {
+            color: @blue;
+        }
+        &.syntax--variable {
+            color: @cyan;
+        }
     }
-    &.syntax--other {
-      color: @syntax-text-color;
+
+    .syntax--support {
+        &.syntax--function {
+            color: @syntax-text-color;
+            // &.syntax--construct {
+            //     color: @syntax-text-color;
+            // }
+            // &.syntax--array {
+            //     color: @syntax-text-color;
+            // }
+        }
+        &.syntax--class {
+
+        }
     }
-  }
-  .syntax--variable {
-    color: @blue;
-  }
-  .syntax--punctuation.syntax--definition {
-    color: @syntax-text-color;
-    &.syntax--comment {
-      color: @syntax-comment-color;
+
+    .syntax--keyword {
+        color: @base01;
+        &.syntax--operator {
+            &.syntax--class {
+                color: @syntax-text-color;
+            }
+            &.syntax--heredoc {
+                color: @syntax-text-color;
+                font-weight: bold;
+            }
+        }
+        &.syntax--control {
+            font-weight: bold;
+        }
+        &.syntax--other {
+            font-weight: bold;
+        }
     }
-    &.syntax--array {
-      color: @red;
-    }
-    &.syntax--string {
-      color: @syntax-text-color;
-    }
-    &.syntax--variable {
-      color: @green;
-    }
-  }
-  .syntax--support.syntax--function {
-    &.syntax--construct {
-      color: @yellow;
-    }
-    &.syntax--array {
-      color: @green;
-    }
-  }
-  .syntax--keyword {
-    &.syntax--operator {
-      &.syntax--class {
-        color: @yellow;
-      }
-      &.syntax--assignment {
-        color: @green;
-      }
-    }
-    &.syntax--other {
-      color: @red;
-    }
-  }
+
 }

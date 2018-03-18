@@ -1,9 +1,10 @@
-# Solarized Light Syntax theme
+# Solarized Light Bold Nature Syntax theme
 
-Atom theme using the ever popular light [solarized](http://ethanschoonover.com/solarized) colors.
+This is a modification of the default [Solarized Light Atom syntax theme](https://atom.io/themes/solarized-light-syntax), especially targeted towards PHP. The default [solarized](http://ethanschoonover.com/solarized) colors are nice for viewing, but I feel like they don't provide enough visual contrast between elements.
 
-<img alt="screenshot" src="https://cloud.githubusercontent.com/assets/378023/12602186/87edab3e-c4ea-11e5-8f4a-4b7defda283b.png" srcset="https://cloud.githubusercontent.com/assets/378023/12602177/78d568da-c4ea-11e5-836d-e922ca5c850a.png 2x">
+I chose the colors, weights, and styles to provide a little more "pop" between the elements while retaining a color scheme heavy on green/blue/gray with orange and purple accents; hence the name "Bold Nature".
 
-This theme is installed by default with Atom and can be activated by going to
-the _Themes_ section in the Settings view (`cmd-,`) and selecting it from the
-_Syntax Themes_ dropdown menu.
+## Known Issues
+* No color differentiation between **public**, **protected**, and **private**. Ideally, I'd make **public** green, **protected** yellow, and **private** red, but Atom's parser(?) doesn't seem to provide any way to differentiate between them.
+* Single-line SQL statements have syntax highlighting while multi-line ones do not. This seems to be the intended behavior from the parent project, but it's very odd-looking, at least in this color scheme.
+* Regular expressions also have syntax highlighting, which also looks weird to me.
