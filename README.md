@@ -4,6 +4,13 @@ This is a modification of the default [Solarized Light Atom syntax theme](https:
 
 I chose the colors, weights, and styles to provide a little more "pop" between the elements while retaining a color scheme heavy on green/blue/gray with orange and purple accents; hence the name "Bold Nature".
 
+![screenshot](screenshot.png)
+
+## How to install
+```
+apm install JeremyBuchmann/solarized-light-syntax
+```
+
 ## Known Issues
 * No color differentiation between **public**, **protected**, and **private**. Ideally, I'd make **public** green, **protected** yellow, and **private** red, but Atom's parser(?) doesn't seem to provide any way to differentiate between them.
 * Single-line SQL statements have syntax highlighting while multi-line ones do not. This seems to be the intended behavior from the parent project, but it's very odd-looking, at least in this color scheme.
